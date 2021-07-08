@@ -1,8 +1,8 @@
 # CSS Zen Garden: The Beauty of CSS Design
 
-> [Your name]
+> Yosita Jinda
 >  
-> [Your ID]
+> 6210451411
 
 ## Task
 

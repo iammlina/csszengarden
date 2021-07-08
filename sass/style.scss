@@ -1,0 +1,77 @@
+$primary-color: rgb(243, 215, 229);
+$one-hundred-percent: 100px/100px *100%;
+$ten-percent: 1px/10px *100%;
+$half-percent: 1px/2px *100%;
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.intro {
+    background-attachment:  fixed;
+    background-color: #CDF0EA;
+    background-image: url('../img/minimalist.png') ;
+    background-size: 2000px;
+    margin: auto;
+    width: $one-hundred-percent;
+}
+
+header {
+    padding: 45px 0 90px 0;
+    background: url('../img/sunpink.png') center;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    
+}
+
+header h1 {
+    color: black;
+}
+
+.page-wrapper {
+    background-color: #DFD3C3; 
+    padding: 0 150px 0 150px;  
+	margin: 0; 
+	position: relative;
+}
+
+.summary{
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.preamble, .participation { 
+	padding: 45px 100px 70px 90px;
+	width: $half-percent;
+    text-align: left;
+}
+
+.supporting {
+    background-attachment:  fixed;
+    background-color: #fff7e4;
+    background-image: url('../img/flowerpink.jpg');
+    background-size: 500px;
+}
+
+.explanation {
+    margin: auto;
+	padding: 50px 0 10px 560px;
+	width: 500px;
+    text-align: right;
+}
+
+.benefits{
+    padding: 0 100px 40px 100px;
+    text-align: center;
+}
+
+.requirements {
+    background-color: #fff7e4;
+    padding: 40px 100px;
+}
+
+
