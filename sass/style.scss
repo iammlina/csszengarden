@@ -4,24 +4,39 @@ $ten-percent: 1px/10px *100%;
 $half-percent: 1px/2px *100%;
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     
 }
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #bdb29f;
+	}
 
 .intro {
     background-attachment:  fixed;
     background-color: #CDF0EA;
     background-image: url('../img/minimalist.png') ;
-    background-size: 2000px;
+    background-size: 2100px;
     margin: auto;
     width: $one-hundred-percent;
 }
 
 header {
-    padding: 45px 0 90px 0;
-    background: url('../img/sunpink.png') center;
+    padding: 80px 0 90px 0;
+    /*background: url('../img/sunpink.png') center;*/
+    background-image: url('../img/sunblue.png');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: $one-hundred-percent;
+    
     margin: auto;
     text-align: center;
     
@@ -47,6 +62,9 @@ header h1 {
 .preamble, .participation { 
 	padding: 45px 100px 70px 90px;
 	width: $half-percent;
+}
+
+.preamble {
     text-align: left;
 }
 
@@ -54,24 +72,134 @@ header h1 {
     background-attachment:  fixed;
     background-color: #fff7e4;
     background-image: url('../img/flowerpink.jpg');
-    background-size: 500px;
+    background-size: 700px;
 }
 
 .explanation {
-    margin: auto;
-	padding: 50px 0 10px 560px;
-	width: 500px;
-    text-align: right;
-}
-
-.benefits{
-    padding: 0 100px 40px 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	max-width: 500px;
+    position: absolute;
+    top: 880px;
+    left: 300px;
+    background-color: #C2B8A3;
+    padding: 0 50px 10px 50px;
     text-align: center;
 }
 
-.requirements {
-    background-color: #fff7e4;
-    padding: 40px 100px;
+.participation {
+    text-align: center;
+    padding: 475px 0 450px 150px;
+}
+
+.benefits{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    position: absolute;
+    top: 1675px;
+    left: 400px;
+    background-color: #B4846C ;
+    padding: 0 50px 10px 50px;
+    text-align: center;
 }
 
 
+.requirements {
+    padding: 45px 240px 180px 90px;
+    width: auto;
+    text-align: left;
+
+    background-attachment:  fixed;
+    background-color: #fff7e4;
+    background-image: url('../img/rose.png') ;
+    background-size: 1500px;
+    margin: auto;
+}
+
+.requirements p:last-child {
+    width: 700px;
+    padding: 10px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.705);
+    background-color: #C19191;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+}
+
+@media (min-width: 1132px) {
+    .design-selection, .zen-resources, .design-archives{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        position: absolute;
+        right: 150px;
+        width: 20%;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+        /*background: transparent;*/
+    }
+}
+
+.design-selection {
+    top: 775px;
+    background-color: #ece8e5;
+}
+
+div.zen-resources {
+    top: 1625px;
+    background-image: url('../img/flowerblocklight.png');
+    background-size: 500px;
+}
+
+.design-archives {
+    top: 2400px;
+    /*background-image: url('../img/leavesgreen.png');
+    background-size: 100px;*/
+    background-image: url('../img/Sunflowerswhite.jpg');
+    background-size: 600px;
+}
+
+.sidebar li {
+    list-style-type: none;
+    display: block;
+    background-color: whitesmoke;
+    float: left;
+    width: 70%;
+    padding: 0.75em 8%;
+    margin: 0 10px 10px 0;
+    border-top: solid 1px #caf0d5;
+}
+
+.design-selection .design-name, .zen-resources a, li.viewall a {
+    display: block;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+.sidebar a {
+    color: blueviolet;
+}
+
+footer {
+    background-image: url('../img/Sunflowerswhite.jpg');
+    background-size: 1800px;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    overflow-x: hidden;
+    text-align: center;
+    }
+
+footer a {
+    color: #C19191; 
+    padding: 20px;
+    display: inline-block; 
+}
+
+footer a:hover {
+    background-color: #8B5D5D;
+    color: whitesmoke;
+}
