@@ -1,6 +1,6 @@
 # CSS Zen Garden: The Beauty of CSS Design
 
-> Yosita Jinda
+> Yosita Jinda (Lina)
 >  
 > 6210451411
 

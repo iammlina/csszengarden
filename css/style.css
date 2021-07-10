@@ -1,152 +1,235 @@
+/*---------------------- fonts ----------------------*/
+@font-face {
+  font-family: Rajdhani-Regular;
+  src: url("../fonts/Rajdhani-Regular.ttf"); }
+@font-face {
+  font-family: PlayfairDisplaySC-Regular;
+  src: url("../fonts/PlayfairDisplaySC-Regular.ttf"); }
+@font-face {
+  font-family: PoiretOne-Regular;
+  src: url("../fonts/PoiretOne-Regular.ttf"); }
+@font-face {
+  font-family: Quicksand-Medium;
+  src: url("../fonts/Quicksand-Medium.ttf"); }
+@font-face {
+  font-family: ZenLoop-Regular;
+  src: url("../fonts/ZenLoop-Regular.ttf"); }
+@font-face {
+  font-family: ShadowsIntoLight-Regular;
+  src: url("../fonts/ShadowsIntoLight-Regular.ttf"); }
+/*---------------------- body ---------------------- */
 body {
   margin: auto;
-  padding: 0; }
+  padding: 0;
+  background-color: #DFD3C3; }
 
 a:link {
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2978B5; }
+
+a:hover {
+  color: #8B5D5D; }
 
 a:visited {
   font-weight: bold;
   text-decoration: none;
   color: #bdb29f; }
 
+.page-wrapper {
+  padding: 0 150px;
+  margin: 0;
+  position: relative; }
+  .page-wrapper h3 {
+    font-family: PoiretOne-Regular;
+    font-weight: bold;
+    font-size: 1.9em; }
+  .page-wrapper p {
+    font-family: Quicksand-Medium;
+    font-size: 1em; }
+
+/*---------------------- header + white bg ---------------------- */
 .intro {
+  /*-------- white bg -------- */
   background-attachment: fixed;
   background-color: #CDF0EA;
   background-image: url("../img/minimalist.png");
   background-size: 2100px;
   margin: auto;
   width: 100%; }
-
-header {
-  padding: 80px 0 90px 0;
-  /*background: url('../img/sunpink.png') center;*/
-  background-image: url("../img/sunblue.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  margin: auto;
-  text-align: center; }
-
-header h1 {
-  color: black; }
-
-.page-wrapper {
-  background-color: #DFD3C3;
-  padding: 0 150px 0 150px;
-  margin: 0;
-  position: relative; }
-
-.summary {
-  padding-top: 1.5em;
-  padding-bottom: 2em;
-  text-align: center; }
+  .intro header {
+    padding: 90px 0;
+    /*background: url('../img/sunpink.png') center;*/
+    background-image: url("../img/sunblue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: Rajdhani-Regular; }
+    .intro header h1 {
+      color: black;
+      font-size: 3.5em;
+      margin-bottom: 0;
+      margin-top: 0; }
+    .intro header h2 {
+      color: #302f2f;
+      text-transform: uppercase;
+      font-size: larger;
+      margin-top: 0; }
+  .intro .summary {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    text-align: center; }
+    .intro .summary p {
+      font-family: PlayfairDisplaySC-Regular;
+      font-weight: 595;
+      font-size: 0.9em; }
+  .intro .preamble {
+    text-align: left; }
 
 .preamble, .participation {
   padding: 45px 100px 70px 90px;
   width: 50%; }
 
-.preamble {
-  text-align: left; }
-
+/*---------------------- pink bg ---------------------- */
 .supporting {
   background-attachment: fixed;
   background-color: #fff7e4;
   background-image: url("../img/flowerpink.jpg");
-  background-size: 700px; }
-
-.explanation {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  max-width: 500px;
-  position: absolute;
-  top: 880px;
-  left: 300px;
-  background-color: #C2B8A3;
-  padding: 0 50px 10px 50px;
-  text-align: center; }
-
-.participation {
+  background-size: 700px;
   text-align: center;
-  padding: 475px 0 450px 150px; }
-
-.benefits {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  max-width: 300px;
-  position: absolute;
-  top: 1675px;
-  left: 400px;
-  background-color: #B4846C;
-  padding: 0 50px 10px 50px;
-  text-align: center; }
-
-.requirements {
-  padding: 45px 240px 180px 90px;
-  width: auto;
-  text-align: left;
-  background-attachment: fixed;
-  background-color: #fff7e4;
-  background-image: url("../img/rose.png");
-  background-size: 1500px;
-  margin: auto; }
-
-.requirements p:last-child {
-  width: 700px;
-  padding: 10px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.705);
-  background-color: #C19191;
-  font-size: 1em;
-  font-style: italic;
-  text-align: center; }
-
-@media (min-width: 1132px) {
-  .design-selection, .zen-resources, .design-archives {
+  margin: auto;
+  /*-------- white rose bg -------- */ }
+  .supporting .explanation, .supporting .benefits {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     position: absolute;
+    padding: 0 50px 20px 50px; }
+  .supporting .explanation {
+    max-width: 600px;
+    top: 950px;
+    left: 250px;
+    background-color: #c2b8a380; }
+  .supporting .participation {
+    padding: 500px 0 360px 130px; }
+  .supporting .benefits {
+    max-width: 500px;
+    top: 1800px;
+    left: 300px;
+    background-color: #b4846c85;
+    color: white; }
+    .supporting .benefits h3 {
+      color: black; }
+  .supporting .requirements {
+    padding: 50px 200px 50px 90px;
+    width: auto;
+    text-align: left;
+    background-attachment: fixed;
+    background-color: #fff7e4;
+    background-image: url("../img/rose.png");
+    background-size: 1500px;
+    margin: auto; }
+    .supporting .requirements p:last-child {
+      width: 430px;
+      padding: 10px 25px;
+      background-color: #c19191;
+      color: white;
+      font-family: ZenLoop-Regular;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 70px;
+      margin-left: 230px; }
+      .supporting .requirements p:last-child a {
+        font-family: ShadowsIntoLight-Regular;
+        font-size: 0.8em;
+        color: #CCF2F4;
+        /*color: #CDFFFC;*/ }
+    .supporting .requirements h3 {
+      font-size: 4.5em;
+      margin-top: 30px;
+      margin-bottom: 100px; }
+
+/*---------------------- made sidebar ---------------------- */
+@media only screen and (min-width: 1132px) {
+  .participation div {
+    float: left;
+    clear: left;
+    width: 77%;
+    padding: 1em 5% 1em 1%; } }
+@media only screen and (min-width: 1132px) {
+  .sidebar {
+    position: absolute;
+    top: 849px;
     right: 150px;
-    width: 20%;
-    padding: 0;
+    width: 23%;
+    padding: 0 0 20px 0;
     margin: 0;
     overflow: visible;
-    /*background: transparent;*/ } }
-.design-selection {
-  top: 775px;
-  background-color: #ece8e5; }
-
-div.zen-resources {
-  top: 1625px;
+    background: transparent; } }
+/*---------------------- link sidebar ---------------------- */
+.sidebar {
   background-image: url("../img/flowerblocklight.png");
-  background-size: 500px; }
+  background-size: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); }
+  .sidebar .design-selection .design-name, .sidebar .zen-resources a, .sidebar li.viewall a {
+    display: block;
+    text-transform: uppercase;
+    font-family: PlayfairDisplaySC-Regular;
+    font-size: 0.9em;
+    color: #FF616D; }
+  .sidebar .design-selection {
+    font-family: Quicksand-Medium; }
+    .sidebar .design-selection .design-name {
+      /*color: #FF616D; */
+      color: #D35D6E; }
+    .sidebar .design-selection .designer-name {
+      font-family: ShadowsIntoLight-Regular;
+      color: #39A2DB; }
+    .sidebar .design-selection a:hover {
+      color: #2978B5; }
+  .sidebar .zen-resources {
+    /*background-image: url('../img/flowerblocklight.png');
+    background-size: 500px;*/ }
+    .sidebar .zen-resources a {
+      color: #926E6F;
+      text-align: center; }
+    .sidebar .zen-resources a:hover {
+      color: #F39189; }
+  .sidebar .design-archives {
+    /*background-image: url('../img/Sunflowerswhite.jpg');
+    background-size: 600px;*/ }
+    .sidebar .design-archives .next {
+      width: 40%;
+      padding-inline-start: 35px;
+      margin-left: 30px; }
+    .sidebar .design-archives .next a {
+      font-family: ShadowsIntoLight-Regular; }
+    .sidebar .design-archives .viewall a {
+      text-align: center;
+      color: #F39189; }
+    .sidebar .design-archives a:hover {
+      color: #8B5D5D; }
+  .sidebar ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 70px; }
+  .sidebar li {
+    list-style-type: none;
+    display: block;
+    /*background-color: #ece8e5a9;*/
+    background-color: rgba(245, 245, 245, 0.623);
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0; }
+  .sidebar h3 {
+    text-align: center; }
 
-.design-archives {
-  top: 2400px;
-  /*background-image: url('../img/leavesgreen.png');
-  background-size: 100px;*/
-  background-image: url("../img/Sunflowerswhite.jpg");
-  background-size: 600px; }
-
-.sidebar li {
-  list-style-type: none;
-  display: block;
-  background-color: whitesmoke;
-  float: left;
-  width: 70%;
-  padding: 0.75em 8%;
-  margin: 0 10px 10px 0;
-  border-top: solid 1px #caf0d5; }
-
-.design-selection .design-name, .zen-resources a, li.viewall a {
-  display: block;
-  margin-bottom: 0.5em;
-  text-transform: uppercase; }
-
-.sidebar h3 {
-  text-align: center; }
-
-.sidebar a {
-  color: blueviolet; }
-
+/*---------------------- footer ---------------------- */
 footer {
   background-image: url("../img/Sunflowerswhite.jpg");
   background-size: 1800px;
@@ -155,14 +238,17 @@ footer {
   z-index: 1;
   overflow-x: hidden;
   text-align: center; }
-
-footer a {
-  color: #C19191;
-  padding: 20px;
-  display: inline-block; }
-
-footer a:hover {
-  background-color: #8B5D5D;
-  color: whitesmoke; }
+  footer a {
+    color: #C19191;
+    padding: 15px 35px;
+    display: inline-block;
+    font-family: PlayfairDisplaySC-Regular;
+    font-weight: bold;
+    font-size: 1.3em; }
+  footer a:link {
+    color: #C19191; }
+  footer a:hover {
+    background-color: #8B5D5D;
+    color: whitesmoke; }
 
 /*# sourceMappingURL=style.css.map */
